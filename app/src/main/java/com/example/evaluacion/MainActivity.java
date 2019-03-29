@@ -20,44 +20,24 @@ public class MainActivity extends AppCompatActivity {
     private EditText etusuario, etemail;
     private int contador;
 
-    public View.OnClickListener click = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            switch (v.getId()){
-                case R.id.ll_casilla1: contador++;conta1.setText(contador + "");
-                break;
-                case R.id.ll_casilla2: contador++;conta2.setText(contador + "");
-                break;
-                case R.id.ll_casilla3: contador++;conta3.setText(contador + "");
-                break;
-                case R.id.ll_casilla4: contador++;conta4.setText(contador + "");
-                break;
-                case R.id.ll_casilla5: contador++;conta5.setText(contador + "");
-                break;
-                case R.id.ll_casilla6: contador++;conta6.setText(contador + "");
-                break;
-                case R.id.ll_casilla7: contador++;conta7.setText(contador + "");
-                break;
-                case R.id.ll_casilla8: contador++;conta8.setText(contador + "");
-                break;
-                case R.id.ll_casilla9: contador++;conta9.setText(contador + "");
-                break;
-            }
-        }
-    };
+    private void Click(TextView text){
+        text.setText((Integer.parseInt(text.getText().toString())+1)+"");
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        casilla1=findViewById(R.id.ll_casilla1);
         tvusuario = findViewById(R.id.tv_usuario);
         tvemail = findViewById(R.id.tv_email);
         bt_enviar = findViewById(R.id.bt_enviar);
         etusuario = findViewById(R.id.et_usuario);
         etemail= findViewById(R.id.et_email);
         conta1= findViewById(R.id.conta1);
-        conta1.setOnClickListener(click);
+        casilla1.setOnClickListener(v->Click(conta1));
+        conta2 =findViewById(R.id.conta2);
+        //conta2.setOnClickListener(click);
 
 
         bt_enviar.setOnClickListener(v->{
