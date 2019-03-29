@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:background="#e13b17"
+            android:background="#C70000"
             android:orientation="vertical">
 
             <TextView
@@ -61,7 +61,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#B200C7">
 
             <TextView
                 android:id="@+id/producto2"
@@ -75,7 +75,7 @@
                 android:id="@+id/conta2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -89,7 +89,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#190095">
 
             <TextView
                 android:id="@+id/producto3"
@@ -103,7 +103,7 @@
                 android:id="@+id/conta3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -125,7 +125,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#5C009C">
 
             <TextView
                 android:id="@+id/producto4"
@@ -139,7 +139,7 @@
                 android:id="@+id/conta4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -153,7 +153,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#0037AB">
 
             <TextView
                 android:id="@+id/producto5"
@@ -167,7 +167,7 @@
                 android:id="@+id/conta5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -181,7 +181,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#1B38F5">
 
             <TextView
                 android:id="@+id/producto6"
@@ -195,7 +195,7 @@
                 android:id="@+id/conta6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -217,7 +217,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#29C1FF">
 
             <TextView
                 android:id="@+id/producto7"
@@ -231,7 +231,7 @@
                 android:id="@+id/conta7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -245,7 +245,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#09ACB6">
 
             <TextView
                 android:id="@+id/producto8"
@@ -259,7 +259,7 @@
                 android:id="@+id/conta8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>
@@ -273,7 +273,7 @@
             android:layout_weight="1"
             android:layout_margin="8dp"
             android:orientation="vertical"
-            android:background="#e13b17">
+            android:background="#09B675">
 
             <TextView
                 android:id="@+id/producto9"
@@ -287,7 +287,7 @@
                 android:id="@+id/conta9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="#"
+                android:text="0"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:layout_gravity="center"/>

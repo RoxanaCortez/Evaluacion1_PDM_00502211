@@ -12,26 +12,48 @@ import com.example.evaluacion.utils.AppConstants;
 
 public class SecondActivity extends AppCompatActivity {
     private Button bt_share;
-    private TextView tvusuario, tvemail;
-    private TextView usu, mail;
+    private TextView con1, con2, con3, con4, con5, con6, con7, con8, con9;
+    private TextView usu, mail, resp;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        tvusuario = findViewById(R.id.tv_usuario);
-        tvemail = findViewById(R.id.tv_email);
+
         bt_share = findViewById(R.id.bt_share);
         usu = findViewById(R.id.usuario);
         mail= findViewById(R.id.email);
+        resp= findViewById(R.id.total);
 
+        con1 = findViewById(R.id.cont1);
+        con2 = findViewById(R.id.cont2);
+        con3 = findViewById(R.id.cont3);
+        con4 = findViewById(R.id.cont4);
+        con5 = findViewById(R.id.cont5);
+        con6 = findViewById(R.id.cont6);
+        con7 = findViewById(R.id.cont7);
+        con8 = findViewById(R.id.cont8);
+        con9 = findViewById(R.id.cont9);
 
 
         Intent mIntent = this.getIntent();
         if(mIntent != null) {
             usu.setText(mIntent.getStringExtra(AppConstants.TEXT_NAME));
             mail.setText(mIntent.getStringExtra(AppConstants.TEXT_EMAIL));
+            resp.setText(mIntent.getStringExtra(AppConstants.TEXT_CONT));
+
+            con1.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM1));
+            con2.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM2));
+            con3.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM3));
+            con4.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM4));
+            con5.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM5));
+            con6.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM6));
+            con7.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM7));
+            con8.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM8));
+            con9.setText(mIntent.getStringExtra(AppConstants.TEXT_NUM9));
+
 
         }
 
@@ -41,7 +63,8 @@ public class SecondActivity extends AppCompatActivity {
             secondIntent.setType("text/plain");
 
             secondIntent.putExtra(Intent.EXTRA_TEXT,"\nUsername: "+usu.getText().toString()
-                    +"\nPassword: "+mail.getText().toString());
+                    +"\nEmail: "+mail.getText().toString()
+                    +"\nTotal: "+resp.getText().toString());
 
             startActivity(secondIntent);
         });
